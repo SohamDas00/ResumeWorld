@@ -63,7 +63,7 @@ const Footer = () => {
       </div>
       <div className="flex flex-col md:flex-row items-center justify-between gap-4 py-4 border-t mt-6 border-slate-200">
         <p className="text-center">
-          Copyright 2025 © <a href="https://prebuiltui.com">PrebuiltUI</a> All
+          Copyright 2026 © <a href="https://prebuiltui.com">ResumeWorld</a> All
           Right Reserved.
         </p>
         <div className="flex items-center gap-4">

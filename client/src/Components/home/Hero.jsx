@@ -1,3 +1,4 @@
+import { Check, MoveRight, Video } from "lucide-react";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -26,8 +27,8 @@ const Hero = () => {
             <a href="#testimonials" className="hover:text-green-600 transition">
               Testimonials
             </a>
-            <a href="#footer" className="hover:text-green-600 transition">
-              Footer
+            <a href="#contactus" className="hover:text-green-600 transition">
+              Contact us
             </a>
           </div>
 
@@ -80,8 +81,8 @@ const Hero = () => {
           <a href="#testimonials" className="text-white">
             Testimonials
           </a>
-          <a href="#footer" className="text-white">
-            Footer
+          <a href="#contactus" className="text-white">
+            Contact us
           </a>
           <button
             onClick={() => setMenuOpen(false)}
@@ -115,107 +116,29 @@ const Hero = () => {
               className="bg-green-500 hover:bg-green-600 text-white rounded-full px-9 h-12 m-1 ring-offset-2 ring-1 ring-green-400 flex items-center transition-colors"
             >
               Get started
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="lucide lucide-arrow-right ml-1 size-4"
-                aria-hidden="true"
-              >
-                <path d="M5 12h14"></path>
-                <path d="m12 5 7 7-7 7"></path>
-              </svg>
+              <MoveRight className="ml-2 w-5"/>
             </Link>
             <button className="flex items-center gap-2 border border-slate-400 hover:bg-green-100 transition rounded-full px-7 h-12 text-slate-700">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="lucide lucide-video size-5"
-                aria-hidden="true"
-              >
-                <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"></path>
-                <rect x="2" y="6" width="14" height="12" rx="2"></rect>
-              </svg>
+              <Video className="text-gray-400"/>
               <span>Try demo</span>
             </button>
           </div>
           <div className="flex flex-wrap justify-center items-center gap-4 md:gap-14 mt-15">
             <p className="flex items-center gap-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                className="lucide lucide-check-icon lucide-check size-5 text-green-600"
-              >
-                <path d="M20 6 9 17l-5-5" />
-              </svg>
+              <Check className="text-green-600 size-5"/>
               <span className="text-slate-400">AI-optimized content</span>
             </p>
             <p className="flex items-center gap-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                className="lucide lucide-check-icon lucide-check size-5 text-green-600"
-              >
-                <path d="M20 6 9 17l-5-5" />
-              </svg>
+              <Check className="text-green-600 size-5"/>
               <span className="text-slate-400">100% Free</span>
             </p>
             <p className="flex items-center gap-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                className="lucide lucide-check-icon lucide-check size-5 text-green-600"
-              >
-                <path d="M20 6 9 17l-5-5" />
-              </svg>
+              <Check className="text-green-600 size-5"/>
               <span className="text-slate-400">Instant PDF download</span>
             </p>
           </div>
         </div>
       </div>
-      <style>
-        {`
-                    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-                    * {
-                        font-family: 'Poppins', sans-serif;
-                    }
-                `}
-      </style>
     </>
   );
 };
