@@ -6,6 +6,7 @@ import Layout from './Pages/Layout'
 import ResumeBuilder from './Pages/ResumeBuilder'
 import Preview from './Pages/Preview'
 import Login from './Pages/Login'
+import Test from './Pages/Test'
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         </Route>
         <Route path='view/:resumeId' element={<Preview/>}/>
         <Route path='/login'  element={<Login/>}/>
+        <Route path='test' element={<Test/>}/>
       </Routes>
     </>
   )
