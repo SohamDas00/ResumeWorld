@@ -11,7 +11,7 @@ const Dashboard = () => {
 
   const [allResumes, setAllResumes] = useState([]);
   const [showCreateResume, setShowCreateResume] = useState(false);
-  const [updateResume, setUpdateResume] = useState(false);
+  const [uploadResume, setUploadResume] = useState(false);
   const [updateTitle, setUpdateTitle] = useState(false);
   const [title, setTitle] = useState("");
   const [selectedResumeId, setSelectedResumeId] = useState(null);
@@ -105,7 +105,7 @@ const Dashboard = () => {
         {/* Upload */}
         <div
           className="shadow-md bg-white p-6 rounded-lg h-52 w-42 flex flex-col items-center justify-center cursor-pointer hover:border border-dashed hover:shadow-lg transition"
-          onClick={() => setUpdateResume(true)}
+          onClick={() => setUploadResume(true)}
         >
           <div className="bg-green-100 text-green-600 p-4 rounded-full">
             <Upload size={20} />
@@ -113,6 +113,7 @@ const Dashboard = () => {
           <p className="mt-3 text-gray-700">Upload Existing</p>
         </div>
       </div>
+      <hr className=""/>
 
       {/* Resume Cards */}
       <div className="flex flex-wrap gap-6 m-20 mt-6">
@@ -198,7 +199,7 @@ const Dashboard = () => {
       )}
 
       {/* UPLOAD MODAL */}
-      {updateResume && (
+      {uploadResume && (
         <div className="fixed inset-0 flex items-center justify-center bg-black/40 z-50">
           <div className="bg-white p-6 rounded-xl shadow-xl w-[420px]">
             <h2 className="text-xl font-semibold mb-4">Upload Resume</h2>
@@ -237,7 +238,7 @@ const Dashboard = () => {
 
             <div className="flex justify-end gap-3">
               <button
-                onClick={() => setUpdateResume(false)}
+                onClick={() => setUploadResume(false)}
                 className="px-4 py-2 bg-gray-200 rounded-md"
               >
                 Cancel
@@ -289,7 +290,7 @@ const Dashboard = () => {
               >
                 Update
               </button>
-            </div>
+            </div>  
           </form>
         </div>
       )}
